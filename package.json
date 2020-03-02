@@ -13,6 +13,7 @@
   "dependencies": {
     "@reach/dialog": "^0.8.5",
     "@reach/tabs": "^0.8.5",
+    "@reach/visually-hidden": "^0.8.2",
     "gatsby": "^2.19.24",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
