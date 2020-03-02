@@ -7,6 +7,7 @@ import Profile from "../components/profile";
 import RouteBase from "../components/route-base";
 import RouteSecret from "../components/route-secret";
 import RouteLogin from "../components/route-login";
+import PrivateRoute from "../components/private-route";
 
 import "react-netlify-identity-widget/styles.css";
 
@@ -24,8 +25,8 @@ const Dashboard = ({ location }) => {
     <Layout>
       <Profile showModal={showModal} />
       <Router>
-        <RouteBase path="/dashboard/base" />
-        <RouteSecret path="/dashboard/secret" />
+        <PrivateRoute component={RouteBase} path="/dashboard/base" />
+        <PrivateRoute component={RouteSecret} path="/dashboard/secret" />
         <RouteLogin path="/dashboard/login" showModal={showModal} />
       </Router>
       <IdentityModal
